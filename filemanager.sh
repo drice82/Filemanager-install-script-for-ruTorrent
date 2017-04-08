@@ -19,7 +19,8 @@ fi
 
 
 # Asking for the ruTorrent path folder
-read -p "Please type your ruTorrent path folder: " -e -i /var/www/rutorrent rutorrent_path
+#read -p "Please type your ruTorrent path folder: " -e -i /var/www/rutorrent rutorrent_path
+rutorrent_path = '/var/www/html/rutorrent'
 
 
 # Installing dependencies
@@ -73,7 +74,7 @@ EOF
 # Permissions for filemanager
 chown -R www-data:www-data $rutorrent_path/plugins/filemanager
 chmod -R 775 $rutorrent_path/plugins/filemanager/scripts
-
+echo "$topDirectory = '/home/ptuser/Downloads';" >> /var/www/html/rutorrent/conf/config.php
 
 # End of the script
 clear
