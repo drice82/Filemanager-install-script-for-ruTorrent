@@ -74,7 +74,7 @@ EOF
 # Permissions for filemanager
 chown -R www-data:www-data $rutorrent_path/plugins/filemanager
 chmod -R 775 $rutorrent_path/plugins/filemanager/scripts
-echo "$topDirectory = '/home/ptuser/Downloads';" >> /var/www/html/rutorrent/conf/config.php
+
 
 # End of the script
 clear
