@@ -5,3 +5,8 @@ Installation
 * chmod +x filemanager.sh
  
 * ./filemanager.sh
+
+修改rutorrent/conf/config.php
+修改web/index.php
+修改/home/lzpt/watch.py
+修改crontab
