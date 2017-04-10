@@ -19,12 +19,11 @@ fi
 
 
 # Asking for the ruTorrent path folder
-#read -p "Please type your ruTorrent path folder: " -e -i /var/www/rutorrent rutorrent_path
-rutorrent_path = '/var/www/html/rutorrent'
+read -p "Please type your ruTorrent path folder: " -e -i /var/www/rutorrent rutorrent_path
 
 
 # Installing dependencies
-apt-get install subversion zip
+apt-get install -y subversion zip
 
 cd /tmp
 
